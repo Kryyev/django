@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Library - {% block  title %} {% endblock %}</title>
+</head>
+<body>
+    <div>
+        <strong>Flask Library</strong>
+        <ul>
+            {% for track in tracks %}
+                <li>{{ track.title }} {{ track.count }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
